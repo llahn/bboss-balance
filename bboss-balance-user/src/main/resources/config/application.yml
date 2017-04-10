@@ -1,0 +1,46 @@
+server:
+  port: 8892
+logging:
+  config: classpath:log/logback.xml    
+eureka:
+  client: 
+    serviceUrl:
+      defaultZone: http://llahn:llahn@localhost:8890/eureka/
+        
+spring: 
+  application:
+    name: user-service
+  datasource:
+    name: balancedev
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.1.100:1521:llahn
+    username: weibo
+    password: weibo
+    #url: jdbc:oracle:thin:@10.248.26.57:1521:bstst6
+    #username: stludr
+    #password: 3edc$RFV
+    filters: stat
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x' from dual
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+    maxPoolPreparedStatementPerConnectionSize: 20
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

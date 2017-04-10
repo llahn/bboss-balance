@@ -8,7 +8,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
+      defaultZone: http://llahn:llahn@localhost:${server.port}/eureka/
         
 #这里的配置表示，访问/baidu/** 直接重定向到http://www.baidu.com
 zuul:

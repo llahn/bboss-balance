@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hpe.bboss.balance.demo.dao.UserMapper">
+	<resultMap id="BaseResultMap" type="com.hpe.bboss.balance.demo.vo.User">
+		<id column="U_ID" property="uId" jdbcType="DECIMAL" />
+		<result column="U_NAME" property="uName" jdbcType="VARCHAR" />
+		<result column="U_AGE" property="uAge" jdbcType="DECIMAL" />
+		<result column="U_SEX" property="uSex" jdbcType="CHAR" />
+		<result column="UC_TIME" property="ucTime" jdbcType="DATE" />
+	</resultMap>
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select
+		*
+		from TEST_USER
+		where U_ID = #{uId,jdbcType=DECIMAL}
+	</select>
+</mapper>

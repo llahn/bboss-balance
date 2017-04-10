@@ -1,4 +1,4 @@
-package com.hpe.bboss.balance.rest;
+package com.hpe.bboss.balance.util;
 
 public class TimeUtil {
 	/*

@@ -1,4 +1,4 @@
-package com.hpe.bboss.balance.rest;
+package com.hpe.bboss.core.rest;
 
 import java.net.URI;
 import java.util.LinkedHashMap;
@@ -16,8 +16,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import com.hpe.bboss.balance.entity.CommonResult;
-import com.hpe.bboss.balance.entity.resultenum.ResultStatus;
+import com.hpe.bboss.core.entity.CommonResult;
+import com.hpe.bboss.core.entity.resultenum.ResultStatus;
 
 @Component
 public class RemoteServiceClient {

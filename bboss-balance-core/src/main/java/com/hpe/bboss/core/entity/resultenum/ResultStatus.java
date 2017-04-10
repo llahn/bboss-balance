@@ -1,4 +1,4 @@
-package com.hpe.bboss.balance.entity.resultenum;
+package com.hpe.bboss.core.entity.resultenum;
 
 public enum ResultStatus {
 	RESPONSE_FAILUE(0, "失败"), 

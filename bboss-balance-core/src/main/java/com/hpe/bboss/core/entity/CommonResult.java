@@ -1,8 +1,8 @@
-package com.hpe.bboss.balance.entity;
+package com.hpe.bboss.core.entity;
 
 import org.apache.commons.lang.StringUtils;
 
-import com.hpe.bboss.balance.entity.resultenum.ResultStatus;
+import com.hpe.bboss.core.entity.resultenum.ResultStatus;
 
 public class CommonResult<T> {
     private int status;

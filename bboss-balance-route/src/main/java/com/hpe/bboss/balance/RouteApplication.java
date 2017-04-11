@@ -18,7 +18,7 @@ import com.netflix.zuul.http.ZuulServlet;
 @EnableZuulProxy
 @EnableEurekaServer //启动一个服务注册中心提供给其他应用进行对话
 @SpringCloudApplication
-@ComponentScan(value="com.hpe.bboss")
+@ComponentScan(value="com.hpe.bboss") //默认扫描的是当前文件所在包层级
 public class RouteApplication {
 	private  Logger logger = LoggerFactory.getLogger(this.getClass());
 	

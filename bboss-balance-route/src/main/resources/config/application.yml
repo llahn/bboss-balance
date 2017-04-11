@@ -1,14 +1,28 @@
-server:
+################
+# 访问端口设置
+################
+server: 
   port: 8890
-logging:
+################
+# 日志设置
+################
+logging: 
   config: classpath:log/logback.xml  
+################
+# 应用名称设置
+################
+spring: 
+  application:
+    name: eureka-server
 
-eureka:
+eureka: 
+  instance: 
+    hostname: localhost   
   client:
-    register-with-eureka: false
-    fetch-registry: false
-    serviceUrl:
-      defaultZone: http://llahn:llahn@localhost:${server.port}/eureka/
+    register-with-eureka: false    #是否注册自身到eureka服务器
+    fetch-registry: false      #是否从eureka服务器获取注册信息
+    serviceUrl:        # defaultZone 是设置eureka服务器所在的地址，如果多个服务器地址，可以通过“,”分隔
+      defaultZone: http://llahn:llahn@${eureka.instance.hostname}:${server.port}/eureka/     
         
 ##这里的配置表示，访问/baidu/** 直接重定向到http://www.baidu.com
 #zuul:

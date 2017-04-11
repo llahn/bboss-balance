@@ -71,11 +71,4 @@ public class AppUtil {
 		}
 	}
 
-	public String object2Json(Object obj) {
-		return JSON.toJSONString(obj);
-	}
-	
-	public <T> T json2Object(String resJson, Class<T> clazz){
-		return JSON.parseObject(resJson, clazz);
-	}
 }

@@ -1,4 +1,4 @@
-package com.hpe.bboss.balance.config;
+package com.hpe.bboss.core.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

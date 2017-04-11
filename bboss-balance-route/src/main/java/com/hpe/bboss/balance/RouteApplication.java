@@ -9,6 +9,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.hpe.bboss.balance.filter.SimpleZuulFilter;
 import com.netflix.zuul.context.ContextLifecycleFilter;
@@ -17,6 +18,7 @@ import com.netflix.zuul.http.ZuulServlet;
 @EnableZuulProxy
 @EnableEurekaServer //启动一个服务注册中心提供给其他应用进行对话
 @SpringCloudApplication
+@ComponentScan(value="com.hpe.bboss")
 public class RouteApplication {
 	private  Logger logger = LoggerFactory.getLogger(this.getClass());
 	

@@ -6,13 +6,15 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.client.RestTemplate;
 
-import com.hpe.bboss.balance.config.DemoDataSource;
+import com.hpe.bboss.core.config.DemoDataSource;
 
 @SpringBootApplication
 @EnableDiscoveryClient // 激活eureka中的DiscoveryClient实现
 @EnableConfigurationProperties(DemoDataSource.class)
+@ComponentScan(value="com.hpe.bboss")
 public class UserApplication {
 	@Bean
 	@LoadBalanced

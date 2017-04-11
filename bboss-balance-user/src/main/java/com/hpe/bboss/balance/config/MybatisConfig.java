@@ -21,6 +21,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.TransactionManagementConfigurer;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.hpe.bboss.core.config.DemoDataSource;
 
 @Configuration
 @EnableTransactionManagement

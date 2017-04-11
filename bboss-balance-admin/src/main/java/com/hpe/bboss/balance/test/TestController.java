@@ -1,5 +1,7 @@
 package com.hpe.bboss.balance.test;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -9,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.hpe.bboss.balance.util.CommonResult;
-import com.hpe.bboss.balance.util.RemoteServiceClient;
+import com.hpe.bboss.core.entity.CommonResult;
+import com.hpe.bboss.core.rest.RemoteServiceClient;
 
 @Controller
 public class TestController {
@@ -18,7 +20,7 @@ public class TestController {
 	@Autowired
 	private DiscoveryClient client;
 	
-	@Autowired
+	@Resource
 	private RemoteServiceClient remote;
 
 	@ResponseBody

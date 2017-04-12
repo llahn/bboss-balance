@@ -5,5 +5,5 @@ security:
   basic:
     enabled: true
   user:
-    name: llahn
-    password: llahn
+    name: demo
+    password: demo

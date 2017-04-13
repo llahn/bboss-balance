@@ -1,6 +1,6 @@
 spring: 
   application:
-    name: bboss-balance-user
+    name: bboss-balance-admin
   cloud:
     config:
       uri:  http://localhost:8888

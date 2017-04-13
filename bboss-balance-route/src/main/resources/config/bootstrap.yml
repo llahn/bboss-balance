@@ -9,7 +9,7 @@ security:
     password: llahn
 spring: 
   application:
-    name: eureka-server
+    name: bboss-balance-route
   cloud:
     config:
       uri:  http://localhost:8888

@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 import com.hpe.bboss.core.config.DemoDataSource;
 
 @SpringBootApplication
-@EnableDiscoveryClient // 激活eureka中的DiscoveryClient实现
+//@EnableDiscoveryClient // 激活eureka中的DiscoveryClient实现
 @EnableConfigurationProperties(DemoDataSource.class)
 @ComponentScan(value="com.hpe.bboss") //默认扫描的是当前文件所在包层级
 public class UserApplication {

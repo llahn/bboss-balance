@@ -13,7 +13,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * 配置好后，可以直接通过 http://http://localhost:8080/swagger-ui.html 来访问首页进行服务的接口的验证、
+ * 配置好后，可以直接通过 http://localhost:8892/swagger-ui.html 来访问首页进行服务的接口的验证、
  */
 @Configuration
 @EnableSwagger2
